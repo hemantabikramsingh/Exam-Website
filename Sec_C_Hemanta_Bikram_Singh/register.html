@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+
+<body>
+    <div id="header">
+
+
+        <div id="topbar">
+            <div id="topbar-contact">
+                <a href="mailto:contact@sastothau.com"><img src="image/mail-icon.png" id="mailicon" />contact@sastothau.com |</a>
+                <a href="tel:9800680630"><img src="image/phone-icon.png" id="phoneicon" />9800680630</a>
+            </div>
+            <div id="topbar-social">
+                <a href="https://www.instagram.com/sastothau_nepal_official/"><img src="image/instagram.png" id="instagram" /></a>
+                <a href="https://www.facebook.com/SastoThauNepalOfficial/"><img src="image/facebook.png " id="facebook" /></a>
+            </div>
+        </div>
+
+
+        <div id="mainbar">
+            <a href="index.html"><img src="image/sastothau_logo.png" id="logo"></a>
+            <form action="POST">
+                <select name="search" id="search-dropdown">
+                    <option value="All">All</option>
+                    <option value="GiftCards">GiftCards</option>
+                    <option value="Netflix">Netflix</option> </select>
+                <input type="text" id="search-form"> </form>
+            <a href="#"><img src="image/search.png" id="search-icon"></a>
+            <a href="login.html" id="login-button">LOGIN/REGISTER</a>
+        </div>
+
+
+        <div id="bottombar">
+            <ul>
+                <li><a href="#">NETFLIX</a>
+                    <ul>
+                        <li><a href="#">Netflix Gift Cards</a></li>
+                        <li><a href="#">Netflix Account</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">GIFT CARDS</a>
+                    <ul>
+                        <li><a href="#">Stem Gift Cards</a></li>
+                        <li><a href="#">Playstore Gift Cards</a></li>
+                        <li><a href="#">iTune Gift Cards</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">IDM SERIAL</a></li>
+                <li><a href="#">MICROSOFT</a>
+                    <ul>
+                        <li><a href="#">Windows 10</a></li>
+                        <li><a href="#">Office 2019</a></li>
+                        <li><a href="#">Office 365</a></li>
+                    </ul>
+                </li>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <br> <br>
+    <div id="register">
+        <div class="First">
+            <br>
+            <h1 class=" text-center text-success">Create a Account</h1>
+            <hr/><br>
+            <div class="col-lg-8 m-auto d-block">
+
+                <form class="bg-light" onsubmit="return validation()">
+
+                    <div class="form">
+                        <label>UserName: </label><br>
+                        <input type="text" name="username" id="user" class="form-control" autocomplete="off">
+                        <span id="userid" class="text-danger font-weight-bold"> </span>
+                    </div>
+
+                    <div class="form">
+                        <br><label>Password: </label><br>
+                        <input type="password" name="username" id="pass" class="form-control" autocomplete="off">
+                        <span id="passid" class="text-danger font-weight-bold"> </span>
+                    </div>
+
+                    <div class="form">
+                        <br><label>Confirm Password: </label><br>
+                        <input type="password" name="username" id="conpass" class="form-control" autocomplete="off">
+                        <span id="confid" class="text-danger font-weight-bold"> </span>
+                    </div>
+
+                    <div class="form">
+                        <br><label>MobileNo: </label><br>
+                        <input type="text" name="username" id="mobile" class="form-control" autocomplete="off">
+                        <span id="mobid" class="text-danger font-weight-bold"> </span>
+                    </div>
+
+                    <div class="form">
+                        <br><label>Email: </label><br>
+                        <input type="text" name="username" id="email" class="form-control" autocomplete="off">
+                        <span id="emails" class="text-danger font-weight-bold"> </span>
+                    </div>
+
+                    <br><input type="submit" name="submit" value="Register" class="btn btn-success">
+                </form>
+                <br>
+
+                <text>Already have an account? <a href="login.html">Sign In</a><text><br>
+                
+            </div>
+            
+        </div>
+    
+    
+    
+    
+    
+        <script type="text/javascript">
+            
+            function validation(){
+    
+                var user = document.getElementById('user').value;
+                var password = document.getElementById('pass').value;
+                var confirmpassword = document.getElementById('conpass').value;
+                var mobileno = document.getElementById('mobile').value;
+                var email = document.getElementById('email').value;
+    
+                if(user == ""){
+                    document.getElementById('userid').innerHTML = " ** please fill the user name.";
+                    return false;
+                }
+    
+                if((user.length < 3)||(user.length > 50)){
+                    document.getElementById('userid').innerHTML = " ** please fill the user name between 3 and 50.";
+                    return false;
+                }
+    
+                if(!isNaN(user)){
+                    document.getElementById('userid').innerHTML = " ** please enter character.";
+                    return false;
+                }
+    
+    
+    
+    
+    
+                if(password == ""){
+                    document.getElementById('passid').innerHTML = " ** please fill the password.";
+                    return false;
+                }
+    
+                if((password.length < 5)||(password.length > 20)){
+                    document.getElementById('passid').innerHTML = " ** please fill the password between 5 and 20.";
+                    return false;
+                }
+    
+                if(password != confirmpassword){
+                    document.getElementById('confid').innerHTML = " ** password are not matching.";
+                    return false;
+                }
+    
+                if(confirmpassword == ""){
+                    document.getElementById('confid').innerHTML = " ** please fill the confirm password.";
+                    return false;
+                }
+    
+    
+    
+    
+    
+    
+    
+                if(mobileno == ""){
+                    document.getElementById('mobid').innerHTML = " ** please fill the mobile number.";
+                    return false;
+                }
+    
+                if(mobileno.length!=10){
+                    document.getElementById('mobid').innerHTML = " ** mobile number should be 10 digit.";
+                    return false;
+                }
+    
+                if(isNaN(mobileno)){
+                    document.getElementById('mobid').innerHTML = " ** mobile number should contain only digit.";
+                    return false;
+                }
+    
+    
+    
+    
+    
+                if(email == ""){
+                    document.getElementById('emails').innerHTML = " ** please fill the email address.";
+                    return false;
+                }
+    
+                if(email.indexOf('@') <= 0){
+                    document.getElementById('emails').innerHTML = " ** please fill the email address in proper format @";
+                    return false;
+                }
+    
+                if((email.charAt(email.length-4)!='.') && (email.charAt(email.length-3)!='.')){
+                    document.getElementById('emails').innerHTML = " ** please fill the email address in proper format '.' ";
+                    return false;
+    
+                }
+    
+    
+            }
+    
+    
+        </script>
+    
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="footer1">
+        <div id="footer-sec-1">
+            <h1>PAGES</h1>
+            <br>
+            <a href="about.html">About US</a>
+            <br/>
+            <a href="#">Shop</a>
+            <br/>
+            <a href="#">My Account</a>
+            <br/>
+            <a href="#">Cart</a>
+            <br/>
+            <a href="support.html">Support</a>
+        </div>
+
+        <div id="footer-sec-2">
+            <h1>CATAGORIES</h1>
+            <br>
+            <ul>
+                <li><a href="#">NETFLIX</a></li>
+                <li><a href="#">GIFT CARDS</a></li>
+                <li><a href="#">IDM SERIAL</a></li>
+                <li><a href="#">MICROSOFT</a>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div id="footer2">
+        <h5>Copyright © 2019 Sastothau. ALL RIGHT RESERVED</h5>
+    </div>
+
+
+</body>
+
+</html>

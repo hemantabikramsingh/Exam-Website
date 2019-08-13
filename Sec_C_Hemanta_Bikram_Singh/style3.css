@@ -1,0 +1,473 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#topbar {
+    background-color: black;
+    width: 100%;
+    height: 25px;
+    padding-left: 15%;
+}
+
+#topbar-contact {
+    float: left;
+    width: 50%;
+}
+
+#topbar-social {
+    padding-right: 15%;
+}
+
+#topbar-contact a {
+    text-decoration: none;
+    color: white;
+    line-height: 25px;
+}
+
+#mailicon {
+    height: 11px;
+    padding-right: 2px;
+}
+
+#phoneicon {
+    height: 13px;
+    padding-right: 2px;
+}
+
+#instagram {
+    height: 25px;
+    float: right;
+}
+
+#facebook {
+    float: right;
+    height: 20px;
+}
+
+#mainbar {
+    width: 100%;
+    padding: 0 15%;
+    background-image: linear-gradient(to right #E6E9EE #EFEAE7);
+}
+
+#logo {
+    width: 25%;
+    float: left;
+}
+
+#search-dropdown {
+    margin-top: 21px;
+    margin-left: 50px;
+    border-radius: 5px;
+    background-color: #EFEAE7;
+}
+
+#search-form {
+    width: 400px;
+    border-radius: 5px;
+    background-color: #EFEAE7;
+}
+
+#search-icon {
+    width: 20px;
+    margin-right: 240px;
+    margin-top: -20px;
+    float: right;
+}
+
+#login-button {
+    text-decoration: none;
+    color: black;
+    margin-top: -17px;
+    float: right;
+}
+
+#login-button:hover {
+    color: #dd3333;
+}
+
+#bottombar {
+    width: 100%;
+    background-color: #dd3333;
+    height: 25px;
+    padding: 0 15%;
+    float: left;
+}
+
+#bottombar ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#bottombar ul li {
+    float: left;
+    width: 150px;
+    height: 20px;
+}
+
+#bottombar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-top: 2px;
+    display: block;
+}
+
+#bottombar ul li ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    background: #dd3333;
+    position: relative;
+    z-index: 9999;
+}
+
+#bottombar ul li a:hover {
+    color: black;
+}
+
+#bottombar ul li ul li a:hover {
+    color: white;
+}
+
+#bottombar ul li ul li a:hover {
+    background-color: black;
+}
+
+#bottombar ul li ul li {
+    display: none;
+}
+
+#bottombar ul li:hover ul li {
+    display: block;
+}
+
+#banner {
+    margin: 4% 15%;
+}
+
+#banner a:hover {
+    color: #dd3333;
+}
+
+#main-banner {
+    float: left;
+    height: 500px;
+    width: 800px;
+    background-image: url("./image/PUNG-Banner.jpg");
+}
+
+#main-banner a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 40%;
+    left: 37%;
+    font-size: 50px;
+}
+
+#small-banner1 {
+    float: right;
+    height: 240px;
+    width: 240px;
+    background-image: url("image/idm-internet-download-manager.jpg");
+}
+
+#small-banner1 a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 40%;
+    left: 15px;
+    font-size: 30px;
+}
+
+#small-banner2 {
+    position: relative;
+    float: right;
+    margin-top: 20px;
+    height: 240px;
+    width: 240px;
+    background-image: url("image/windows.jpg");
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#small-banner2 a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 40%;
+    left: 25px;
+    font-size: 30px;
+}
+
+#small-slider2 h1 {
+    position: relative;
+    bottom: 135px;
+    left: 221px;
+    float: right;
+    color: white;
+    text-decoration: none;
+}
+
+.best-selling-title {
+    text-align: centre;
+    border: 1px black solid;
+    margin-top: 630px;
+    margin-left: 557px;
+    margin-right: 557px;
+    position: relative;
+    z-index: 9999;
+    background: white;
+}
+
+.slider {
+    height: 300px;
+    width: 70%;
+    margin-top: 60px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: red;
+}
+
+.featured-catagory-title {
+    text-align: centre;
+    border: 1px black solid;
+    margin-top: 350px;
+    margin-left: 557px;
+    margin-right: 557px;
+    position: relative;
+    z-index: 9999;
+    background: white;
+}
+
+#featured-catagory a:hover {
+    background-color: red;
+}
+
+#best-selling-item {
+    padding: 4% 15%;
+}
+
+#best-selling-item-1 {
+    float: left;
+    height: 300px;
+    width: 300px;
+    background: url("image/10-dollar-playstore-giftcard.jpg");
+    margin-left: 50px;
+}
+
+#best-selling-item-2 {
+    float: left;
+    height: 300px;
+    width: 300px;
+    background: url("image/50-dollar-steam-giftcard.jpg");
+    margin-left: 50px;
+}
+
+#best-selling-item-3 {
+    float: right;
+    height: 300px;
+    width: 300px;
+    background: url("image/3-months-netflix-ad.jpg")
+}
+
+#best-selling-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    position: relative;
+    top: 320px;
+}
+
+#best-selling-item button {
+    display: block;
+    color: #dd3333;
+    position: relative;
+    top: 310px;
+}
+
+#featured-catagory {
+    padding: 4% 15%;
+}
+
+#featured-catagory-1 {
+    float: left;
+    height: 300px;
+    width: 300px;
+    background: url("image/gift-cards-catagory.jpg");
+    margin-left: 50px;
+}
+
+#featured-catagory-2 {
+    float: left;
+    height: 300px;
+    width: 300px;
+    background: url("image/Internet-Download-Manager-logo-Windowstan.jpg");
+    margin-left: 50px;
+}
+
+#featured-catagory-3 {
+    float: right;
+    height: 300px;
+    width: 300px;
+    background: url("image/Microsoft10.jpg")
+}
+
+#featured-catagory a {
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    font: bold;
+    position: relative;
+    top: 160px;
+    left: 45px;
+    background-color: rgba(255, 255, 255, .7);
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#newsletter {
+    width: 100%;
+    background-color: #dd3333;
+    position: relative;
+    top: 300px;
+    height: 200px;
+}
+
+#newsletter h1 {
+    padding-left: 15%;
+    position: relative;
+    top: -230px;
+    font-size: 40px;
+}
+
+#newsletter p {
+    padding-left: 15%;
+    position: relative;
+    top: -220px;
+    font-size: 25px;
+}
+
+#newsletter-form {
+    position: relative;
+    top: -200px;
+    left: 15%;
+    height: 40px;
+    width: 500px;
+}
+
+#newsletter h4 {
+    position: relative;
+    top: -240px;
+    right: 650px;
+    float: right;
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#newsletter h4:hover {
+    background-color: white;
+    color: black;
+}
+
+#footer1 {
+    background-color: black;
+    opacity: .8;
+    height: 200px;
+    width: 100%;
+    position: relative;
+    top: 600px;
+}
+
+#footer-sec-1 {
+    float: left;
+    position: relative;
+    color: white;
+    position: relative;
+    top: -445px;
+}
+
+#footer-sec-1 a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer-sec-2 {
+    float: right;
+    color: white;
+    position: relative;
+    top: -445px;
+    padding-right: 15%;
+}
+
+#footer-sec-2 a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer2 {
+    background-color: black;
+    opacity: .9;
+    height: 40px;
+    width: 100%;
+    position: relative;
+    top: 600px;
+}
+
+#footer2 h5 {
+    color: white;
+    line-height: 40px;
+    margin-left: 20%;
+    position: relative;
+    top: -280px;
+}
+
+#footer-sec-1 {
+    padding: 0 15%;
+    float: left;
+}
+
+.box {
+    margin: 0% 15%;
+    border: 2px Black solid;
+    float: left;
+    padding: 5%;
+}
+
+#box-left {
+    float: left;
+    width: 40%;
+}
+
+#box-right {
+    float: right;
+    margin-right: 5%;
+}
+
+#box-right h3 {
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#box-right h3:hover {
+    background-color: #dd3333;
+    color: black;
+}
